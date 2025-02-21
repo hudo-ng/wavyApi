@@ -7,7 +7,7 @@ const router = Router();
 router.get("/product", (req, res) => {
   res.end(
     JSON.stringify({
-      message: req.secret,
+      message: ["milk", "sugar", "coffee"],
     })
   );
 });
