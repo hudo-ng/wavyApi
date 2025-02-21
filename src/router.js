@@ -5,7 +5,11 @@ const router = Router();
 // Product
 
 router.get("/product", (req, res) => {
-  res.end("Hi");
+  res.end(
+    JSON.stringify({
+      message: req.secret,
+    })
+  );
 });
 
 router.get("/product/:id", () => {});
